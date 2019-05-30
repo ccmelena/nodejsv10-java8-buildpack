@@ -15,4 +15,6 @@ install_java() {
   mv /tmp/jdk/jdk1.8.0_211/* $dir
   chmod +x $dir/bin
   echo "Installation complete!"	
+  echo "Version: "
+  javac -version
 }
