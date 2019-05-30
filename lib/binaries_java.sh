@@ -15,6 +15,13 @@ install_java() {
   mv /tmp/jdk/jdk1.8.0_211/* $dir
   chmod +x $dir/bin
   echo "Installation complete!"	
+  echo "Export PATH"
+  export JAVA_HOME=$dir
+  export PATH=$dir/bin:$PATH
+  echo $JAVA_HOME
+  echo $PATH
+  
   echo "Version: "
+  java -version
   javac -version
 }
