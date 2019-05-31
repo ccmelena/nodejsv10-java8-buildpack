@@ -2,7 +2,7 @@ install_java() {
   local version="$1"
   local dir="$2"
   
-  local download_url="https://uc59f1da8fda7520758caedfaa79.dl.dropboxusercontent.com/cd/0/get/Ah7-x65ezb4LMlZSWJe1RDUe1NeQpyYuOr0dBsocSnMVKVZAk6YO_wPtjA00LjAtCWxOKQlVLW6TLx6rcDJzjE8KQi61BeiUOg4pP6h2GHrgTw/file#"
+  local download_url="https://uc2f9c35a88599d6d089e5efe62c.dl.dropboxusercontent.com/cd/0/get/Ah5W-D9VvMVClKutscjHpnq7rN5JDELvdtSnWfzBVLj98ZB-z6cijKz8w-tsJ8KfPV_siJgVXKKiyVJwlaIZj-kfyiUYHkMKU5d4jLbSAz5x1w/file#"
   echo "Downloading JAVA [$download_url]"
   curl  --silent --fail --retry 5 --retry-max-time 15 -j -k -L -H "Cookie: oraclelicense=accept-securebackup-cookie" "$download_url" -o /tmp/java.tar.gz || (echo "Unable to download java; does it exist?" && false)
   echo "Download complete!"
