@@ -21,6 +21,8 @@ install_java() {
   #export LD_LIBRARY_PATH=$dir/jre/lib/amd64/server/libjvm.so
   echo ">>> $JAVA_HOME"
   echo ">>> $PATH"
+  echo ">>> $LIBRARY_PATH"
+  echo ">>> $LD_PRELOAD"
   #echo $LD_LIBRARY_PATH
   
   #echo "list3..."
