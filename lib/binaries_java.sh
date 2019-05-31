@@ -18,7 +18,7 @@ install_java() {
   echo "Export PATH"
   export JAVA_HOME=$dir
   export PATH=$dir/bin:$PATH
-  export LD_LIBRARY_PATH=$dir/jre/lib/amd64/server
+  export LD_LIBRARY_PATH=$dir/jre/lib/amd64/server:$LD_LIBRARY_PATH
   echo $JAVA_HOME
   echo $PATH
   echo $LD_LIBRARY_PATH
