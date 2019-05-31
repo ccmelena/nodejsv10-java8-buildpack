@@ -16,9 +16,10 @@ install_java() {
   chmod +x $dir/bin
   echo "Installation complete!"	
   echo "Export PATH"
-  #export JAVA_HOME=$dir
+  export JAVA_HOME=$dir
   #export PATH=$dir/bin:$PATH
   #export LD_LIBRARY_PATH=$dir/jre/lib/amd64/server/libjvm.so
+  echo ">>> $JAVA_HOME"
   echo $JAVA_HOME
   echo $PATH
   #echo $LD_LIBRARY_PATH
