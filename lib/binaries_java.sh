@@ -17,17 +17,15 @@ install_java() {
   echo "Installation complete!"	
   echo "Export PATH"
   export JAVA_HOME=$dir
-  #export PATH=$dir/bin:$PATH
+  export PATH=$JAVA_HOME/bin:$PATH
   #export LD_LIBRARY_PATH=$dir/jre/lib/amd64/server/libjvm.so
   echo ">>> $JAVA_HOME"
-  echo $JAVA_HOME
-  echo $PATH
+  echo ">>> $PATH"
   #echo $LD_LIBRARY_PATH
   
-  echo "list3..."
+  #echo "list3..."
   #ls "/usr/lib"/
-  
-  whoami
+
   #ln -sf $dir/jre/lib/amd64/server/libjvm.so /usr/lib/libjvm.so
   #cp $dir/jre/lib/amd64/server/libjvm.so /usr/lib/libjvm.so
   
