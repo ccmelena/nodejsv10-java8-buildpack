@@ -26,6 +26,7 @@ install_java() {
   echo "list3..."
   ls "/usr/lib"/
   
+  whoami
   ln -sf $dir/jre/lib/amd64/server/libjvm.so /usr/lib/libjvm.so
   #cp $dir/jre/lib/amd64/server/libjvm.so /usr/lib/libjvm.so
   
