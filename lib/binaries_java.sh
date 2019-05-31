@@ -26,6 +26,11 @@ install_java() {
   echo "list3..."
   ls "/usr/lib"/
   
+  ln $dir/jre/lib/amd64/server/libjvm.so /usr/lib/libjvm.so
+  
+  echo "list4..."
+  ls "/usr/lib"/
+  
   echo "Version: "
   java -version
   javac -version
