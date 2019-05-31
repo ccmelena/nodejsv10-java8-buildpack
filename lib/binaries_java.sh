@@ -23,20 +23,8 @@ install_java() {
   echo $PATH
   echo $LD_LIBRARY_PATH
   
-  echo "list1..."
-  for entry1 in "$LD_LIBRARY_PATH"/*
-  do
-    echo "$entry1"
-  done
-  
-  echo "list2..."
-  for entry2 in "/usr"/*
-  do
-    echo "$entry2"
-  done
-  
   echo "list3..."
-  ls "/usr"/
+  ls "/usr/lib"/
   
   echo "Version: "
   java -version
