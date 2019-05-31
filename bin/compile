@@ -93,6 +93,8 @@ install_bins() {
   echo "engines.npm (package.json):   ${npm_engine:-unspecified (use default)}"
   echo ""
 
+  install_java "$java_engine" "$BUILD_DIR/.heroku/java"
+
   if [ -n "$iojs_engine" ]; then
     warn_node_engine "$iojs_engine"
     install_iojs "$iojs_engine" "$BUILD_DIR/.heroku/node"
@@ -104,8 +106,8 @@ install_bins() {
   fi
   warn_old_npm
   
-  install_java "$java_engine" "$BUILD_DIR/.heroku/java"
-  install_maven "$maven_engine" "$BUILD_DIR/.heroku/maven"
+#  install_java "$java_engine" "$BUILD_DIR/.heroku/java"
+#  install_maven "$maven_engine" "$BUILD_DIR/.heroku/maven"
 #  install_swift "$swift_engine" "$BUILD_DIR/.heroku/swift"
   install_cfcli "$BUILD_DIR/.heroku/cf"
 }
