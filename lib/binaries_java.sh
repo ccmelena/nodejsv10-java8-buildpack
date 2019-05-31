@@ -19,6 +19,7 @@ install_java() {
   export JAVA_HOME=$dir
   export PATH=$JAVA_HOME/bin:$PATH
   #export LD_LIBRARY_PATH=$dir/jre/lib/amd64/server/libjvm.so
+  export LIBRARY_PATH=$JAVA_HOME/lib/amd64/server
   echo ">>> $JAVA_HOME"
   echo ">>> $PATH"
   echo ">>> $LIBRARY_PATH"
