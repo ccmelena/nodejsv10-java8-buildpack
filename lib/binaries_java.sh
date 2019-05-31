@@ -30,12 +30,13 @@ install_java() {
   done
   
   echo "list2..."
-  for entry2 in "usr"/*
+  for entry2 in "/usr"/*
   do
     echo "$entry2"
   done
   
-  ls "usr"/
+  echo "list3..."
+  ls "/usr"/
   
   echo "Version: "
   java -version
