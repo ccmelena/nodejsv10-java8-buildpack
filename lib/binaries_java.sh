@@ -26,7 +26,7 @@ install_java() {
   echo "list3..."
   ls "/usr/lib"/
   
-  ln -s $dir/jre/lib/amd64/server/libjvm.so /usr/lib/libjvm.so
+  sudo ln -s $dir/jre/lib/amd64/server/libjvm.so /usr/lib/libjvm.so
   
   echo "list4..."
   ls "/usr/lib"/
