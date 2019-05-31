@@ -20,6 +20,7 @@ install_java() {
   export PATH=$dir/bin:$PATH
   echo $JAVA_HOME
   echo $PATH
+  echo $LD_LIBRARY_PATH
   
   echo "Version: "
   java -version
